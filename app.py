@@ -4,6 +4,10 @@ from src.helper import gemini_init, get_response
 
 
 def main():
+    """
+    The `main` function sets up a Streamlit app for extracting invoice information using the Gemini
+    model.
+    """
     model = gemini_init()
     st.set_page_config(page_title="Invoice Extractor")
     st.title("Extract Invoice Info with Gemini")
